@@ -27,6 +27,7 @@ class ListOfWidget extends StatelessWidget {
         mainAxisSpacing: 10,
         padding: const EdgeInsets.all(20),
         children: [
+          //TextField Validator
           InkWell(
             onTap: () => Navigator.push(
               context,
@@ -42,6 +43,62 @@ class ListOfWidget extends StatelessWidget {
               borderRadius: BorderRadius.circular(20),
               child: const Center(
                 child: Text('TextField Validator'),
+              ),
+            ),
+          ),
+          //TextFormField Validator
+          InkWell(
+            onTap: () {},
+            borderRadius: BorderRadius.circular(20),
+            child: Material(
+              color: Colors.blue,
+              borderRadius: BorderRadius.circular(20),
+              child: const Center(
+                child: Text('TextFormField Validator'),
+              ),
+            ),
+          ),
+          InkWell(
+            onTap: () {},
+            borderRadius: BorderRadius.circular(20),
+            child: Material(
+              color: Colors.lightBlue,
+              borderRadius: BorderRadius.circular(20),
+              child: const Center(
+                child: Text('Belum Terisi'),
+              ),
+            ),
+          ),
+          InkWell(
+            onTap: () {},
+            borderRadius: BorderRadius.circular(20),
+            child: Material(
+              color: Colors.blueAccent,
+              borderRadius: BorderRadius.circular(20),
+              child: const Center(
+                child: Text('Belum Terisi'),
+              ),
+            ),
+          ),
+          InkWell(
+            onTap: () {},
+            borderRadius: BorderRadius.circular(20),
+            child: Material(
+              color: Colors.lightGreenAccent,
+              borderRadius: BorderRadius.circular(20),
+              child: const Center(
+                child: Text('Belum Terisi'),
+              ),
+            ),
+          ),
+          InkWell(
+            onTap: () {},
+            borderRadius: BorderRadius.circular(20),
+            child: Material(
+              color: Colors.greenAccent,
+              borderRadius: BorderRadius.circular(20),
+              child: const Center(
+                child: Text('Belum Terisi'),
               ),
             ),
           ),
