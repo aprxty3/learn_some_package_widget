@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learn_some_package_widget/package_widget/textfield_validator_with_controller.dart';
+import 'package:learn_some_package_widget/package_widget/textformfield_validator.dart';
 
 void main() => runApp(const MyApp());
 
@@ -48,7 +49,16 @@ class ListOfWidget extends StatelessWidget {
           ),
           //TextFormField Validator
           InkWell(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => TextFormFieldValidator(
+                    onSubmit: (String value) {},
+                  ),
+                ),
+              );
+            },
             borderRadius: BorderRadius.circular(20),
             child: Material(
               color: Colors.blue,
