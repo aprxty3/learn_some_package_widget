@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:learn_some_package_widget/package_widget/textfield_validator.dart';
+import 'package:learn_some_package_widget/package_widget/textfield_validator_with_controller.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -31,7 +31,9 @@ class ListOfWidget extends StatelessWidget {
             onTap: () => Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => const TextFieldValidator(),
+                builder: (context) => TextFieldValidator(
+                  onSubmit: (String value) {},
+                ),
               ),
             ),
             borderRadius: BorderRadius.circular(20),
