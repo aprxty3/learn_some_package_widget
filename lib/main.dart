@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learn_some_package_widget/package_widget/google_auth.dart';
 import 'package:learn_some_package_widget/package_widget/textfield_validator_with_controller.dart';
 import 'package:learn_some_package_widget/package_widget/textformfield_validator.dart';
 
@@ -68,14 +69,23 @@ class ListOfWidget extends StatelessWidget {
               ),
             ),
           ),
+
+          //Google Auth
           InkWell(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const GoogleAuth(),
+                ),
+              );
+            },
             borderRadius: BorderRadius.circular(20),
             child: Material(
               color: Colors.lightBlue,
               borderRadius: BorderRadius.circular(20),
               child: const Center(
-                child: Text('Belum Terisi'),
+                child: Text('Google Auth'),
               ),
             ),
           ),
